@@ -1,0 +1,347 @@
+:root {
+  --body-color: #f3f4f6;
+  --body-color2: #f7f7fa;
+  --black: #17242a;
+  --black2: #131d22;
+  --red: #dc3545;
+  --header-text-color: #666666;
+  --text-color: #929294;
+  --green: #1fa185;
+  --purple: #3c428c;
+  --Brown: #8b4513;
+  --blue: #3498db;
+  --pink: #ff1756;
+  --green-light: #1cb65d;
+  --purple-2: #8e44ad;
+  --yellow: #f4b932;
+}
+
+/* header */
+
+.header {
+  padding: 1rem 2rem;
+}
+
+.container-poster-header,
+.container-header,
+.container-icon-arrow-down,
+.parent-box-proposal {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.poster-header {
+  height: 60vh;
+  width: 95%;
+  border: 1xp solid var(--black);
+  border-radius: 15px;
+  background: url(../Image/poster.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0rem;
+  box-shadow: 9px 19px 32px #b1b1b1, -9px -9px 32px #ffffff;
+}
+
+/* h1 */
+
+h1 .hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 10.8rem;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 8px;
+  left: -11rem;
+  background-color: var(--purple-2);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+/* end h1 */
+
+.description-header {
+  padding: 1rem 0 0 0;
+  font-size: 1.08rem;
+  color: var(--black);
+  line-height: 1.8rem;
+  text-align: justify;
+}
+
+/* Btn proposal */
+
+.Btn-proposal {
+  margin: 1rem 0 0 0;
+  width: 130px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(15, 15, 15);
+  border: none;
+  color: white;
+  font-weight: 600;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.103);
+  position: relative;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+
+.Btn-proposal .svgIcon {
+  width: 16px;
+}
+
+.Btn-proposal .svgIcon path {
+  fill: white;
+}
+
+.Btn-proposal::before {
+  width: 130px;
+  height: 130px;
+  position: absolute;
+  content: "";
+  background-color: white;
+  border-radius: 50%;
+  left: -100%;
+  top: 0;
+  transition-duration: 0.3s;
+  mix-blend-mode: difference;
+}
+
+.Btn-proposal:hover::before {
+  transition-duration: 0.3s;
+  transform: translate(100%, -50%);
+  border-radius: 0;
+}
+
+.Btn-proposal:active {
+  transform: translate(2px, 2px);
+  transition-duration: 0.3s;
+}
+
+/* end Btn proposal */
+
+/* end header */
+
+/* box product */
+
+.container-box-product {
+  padding: 1.5rem;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-column-gap: 1.5rem;
+  grid-row-gap: 1.5rem;
+  justify-items: center;
+}
+
+.box-product {
+  border: 1px solid var(--black);
+  border-radius: 0.4rem;
+  width: 10rem;
+  height: 12rem;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.link-box-product {
+  width: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.4s;
+}
+
+.parent-img-box-product {
+  width: 100%;
+  height: 60%;
+  overflow: hidden;
+}
+
+.box-product .img-box-product {
+  width: 100%;
+  height: 100%;
+  transition: 0.4s;
+}
+
+.link-box-product:hover .img-box-product:hover {
+  scale: 1.05;
+  transition: 0.4s;
+}
+
+.desc-box-product {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40%;
+  color: var(--purple-2);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+h1 .brand .hover-underline-animation:after {
+  content: "";
+  position: absolute;
+  width: 11.4rem;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 8px;
+  left: 0rem;
+  background-color: var(--purple-2);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+/* end box product */
+
+/* box proposal */
+
+.container-box-proposal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* header box proposal */
+
+.header-box-proposal {
+  width: 100%;
+  padding: 2rem 2vw 2rem 0;
+}
+
+.cta {
+  position: relative;
+  margin: auto;
+  padding: 6px 18px;
+  transition: all 0.2s ease;
+  border: none;
+  background: none;
+}
+
+.cta:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  border-radius: 50px;
+  background: var(--black2);
+  width: 45px;
+  height: 45px;
+  transition: all 0.3s ease;
+}
+
+.cta span {
+  position: relative;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: var(--purple-2);
+}
+
+.cta svg {
+  position: relative;
+  top: 0;
+  margin-left: 10px;
+  fill: var(--purple-2);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke: none;
+  transform: translateX(3px) translateY(2px);
+  transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+  width: 100%;
+  background: var(--black2);
+}
+
+/* carousel cell */
+
+.carousel {
+  width: 90%;
+  height: 100%;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.carousel-cell {
+  margin-right: 10px;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+
+.card {
+  padding: 20px;
+  width: 330px;
+  min-height: 28rem;
+  height: 18rem;
+  border-radius: 0.6rem;
+  background: var(--body-color2);
+  transition: 0.4s;
+  margin: 0 1rem;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--purple-2);
+  margin: 15px 0 0 10px;
+}
+
+.card-image {
+  min-height: 170px;
+  background-color: #c9c9c9;
+  border-radius: 15px;
+  max-height: 588px;
+  max-width: 288px;
+  overflow: hidden;
+}
+
+.card-image .card-img {
+  width: 100%;
+  height: 100%;
+}
+
+.card-body {
+  margin: 8px 0 0 3px;
+  color: var(--black);
+  font-size: 15px;
+  width: 100%;
+  height: 8rem;
+  max-height: 7rem;
+}
+
+.footer {
+  float: right;
+  margin: 28px 0 0 18px;
+  font-size: 13px;
+  color: #636363;
+}
+
+.by-name {
+  font-weight: 700;
+}
+
+/* end carousel cell */
+
+/* end header box proposal */
+
+/* end box proposal */
+
+@media only screen and (max-width: 780px) {
+  .poster-header {
+    width: 90%;
+    box-shadow: 5px 15px 30px #b1b1b1, -5px -5px 30px #ffffff;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta name="theme-color" content="#f7f7fa" /> -->
+    <!-- <link rel="shortcut icon" href="./Image/Logo title.svg" /> -->
+    <title>ROSE Hat</title>
+    <!-- css -->
+    <style>
+      /* loader */
+
+      .container-loader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+        background-color: #131d22;
+        backdrop-filter: blur(10px);
+        transition: 0.4s;
+      }
+
+      .wrapper {
+        width: 200px;
+        height: 60px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .circle {
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        border-radius: 50%;
+        background-color: #fff;
+        left: 15%;
+        transform-origin: 50%;
+        animation: circle7124 0.5s alternate infinite ease;
+      }
+
+      @keyframes circle7124 {
+        0% {
+          top: 60px;
+          height: 5px;
+          border-radius: 50px 50px 25px 25px;
+          transform: scaleX(1.7);
+        }
+
+        40% {
+          height: 20px;
+          border-radius: 50%;
+          transform: scaleX(1);
+        }
+
+        100% {
+          top: 0%;
+        }
+      }
+
+      .circle:nth-child(2) {
+        left: 45%;
+        animation-delay: 0.2s;
+      }
+
+      .circle:nth-child(3) {
+        left: auto;
+        right: 15%;
+        animation-delay: 0.3s;
+      }
+
+      .shadow {
+        width: 20px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 62px;
+        transform-origin: 50%;
+        z-index: -1;
+        left: 15%;
+        filter: blur(1px);
+        animation: shadow046 0.5s alternate infinite ease;
+      }
+
+      @keyframes shadow046 {
+        0% {
+          transform: scaleX(1.5);
+        }
+
+        40% {
+          transform: scaleX(1);
+          opacity: 0.7;
+        }
+
+        100% {
+          transform: scaleX(0.2);
+          opacity: 0.4;
+        }
+      }
+
+      .shadow:nth-child(4) {
+        left: 45%;
+        animation-delay: 0.2s;
+      }
+
+      .shadow:nth-child(5) {
+        left: auto;
+        right: 15%;
+        animation-delay: 0.3s;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+
+    <link rel="stylesheet" href="../Content/profile.css" />
+    <link rel="stylesheet" href="../Content/Similarity-style.css" />
+    <!-- js -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="../Script/profile.js" defer></script>
+    <script src="../Script/Similarity-script.js" defer></script>
+    <script src="../Script/Similarity-script-jquery.js" defer></script>
+  </head>
+
+  <body>
+    <div class="container-fluid p-0 m-0">
+      <!-- loader -->
+      <div class="container-loader">
+        <div class="wrapper">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="shadow"></div>
+          <div class="shadow"></div>
+          <div class="shadow"></div>
+        </div>
+      </div>
+      <!-- header -->
+      <header>
+        <!-- menu -->
+        <div class="row p-0 m-0">
+          <div class="col p-0 m-0">
+            <nav>
+              <!-- menu lg -->
+              <menu class="menu">
+                <ul class="ul-menu">
+                  <li class="item-menu">
+                    <a href="../index.html" class="link-menu"> صفحه اصلی </a>
+                  </li>
+                  <li class="item-menu">
+                    <a href="#" class="link-menu"> محصولات </a>
+                  </li>
+                  <li class="item-menu">
+                    <a href="#" class="link-menu"> درباره ما </a>
+                  </li>
+                  <li class="item-menu">
+                    <a href="#" class="link-menu"> ارتباط با ما </a>
+                  </li>
+                </ul>
+                <ul class="ul-brand">
+                  <li class="item-brand">
+                    <button class="brand">
+                      <span class="hover-underline-animation"> ROSE </span>
+                    </button>
+                  </li>
+                </ul>
+                <ul class="ul-profile">
+                  <a href="./View/form.html">
+                    <li class="item-profile">
+                      <i class="bi bi-person-fill"></i>
+                    </li>
+                  </a>
+                  <li class="item-theme">
+                    <i class="bi bi-brightness-high-fill icon-dark-mode"></i>
+                  </li>
+                  <li class="item-cart">
+                    <i class="bi bi-bag-fill"></i>
+                  </li>
+                </ul>
+              </menu>
+              <!-- menu mobile -->
+              <menu class="menu-mobile">
+                <ul class="ul-menu-mobile">
+                  <li class="item-menu-mobile">
+                    <div class="line-one"></div>
+                    <div class="line-two"></div>
+                    <div class="line-tree"></div>
+                  </li>
+                </ul>
+                <ul class="ul-brand-mobile">
+                  <li class="item-brand-mobile">
+                    <button class="brand">
+                      <span class="hover-underline-animation"> ROSE </span>
+                    </button>
+                  </li>
+                </ul>
+                <ul class="ul-profile-mobile">
+                  <a href="./View/form.html">
+                    <li class="item-profile">
+                      <i class="bi bi-person-fill"></i>
+                    </li>
+                  </a>
+                  <li class="item-theme">
+                    <i
+                      class="bi bi-brightness-high-fill icon-dark-mode-mobile"
+                    ></i>
+                  </li>
+                </ul>
+              </menu>
+              <menu class="sub-menu">
+                <ul class="ul-sub-menu">
+                  <li class="item-sub-menu">
+                    <a href="../index.html" class="link-menu"> صفحه اصلی </a>
+                  </li>
+                  <li class="item-sub-menu">
+                    <a href="#" class="link-menu"> محصولات </a>
+                  </li>
+                  <li class="item-sub-menu">
+                    <a href="#" class="link-menu"> درباره ما </a>
+                  </li>
+                  <li class="item-sub-menu">
+                    <a href="#" class="link-menu"> ارتباط با ما </a>
+                  </li>
+                  <li class="item-sub-menu">
+                    <a href="#" class="link-menu"> سبد خرید </a>
+                  </li>
+                </ul>
+              </menu>
+              <div class="slider-menu-mobile"></div>
+            </nav>
+          </div>
+        </div>
+        <div class="poster-header"></div>
+        <br />
+        <br />
+        <br />
+      </header>
+      <!-- main -->
+      <main>
+        <div class="row p-0 m-0">
+          <div class="col p-0 m-0">
+            
+          </div>
+        </div>
+        <div class="row p-0 m-0">
+          <div class="col p-0 m-0">
+            <menu class="menu-mobile-profile">
+              <div class="list-menu-mobile-profile"></div>
+            </menu>
+          </div>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
